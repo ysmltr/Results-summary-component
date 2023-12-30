@@ -157,7 +157,7 @@ h1{
 .stats-title{
     display: flex;
 }
-#status-img{
+.status-img{
     margin-left: 10px;
 }
 
