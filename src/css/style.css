@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+--Lightslateblue: hsl(252, 100%, 67%); 
+--Lightroyalblue: hsl(241, 81%, 54%);  
+--Violetblue: hsla(256, 72%, 46%, 1); 
+--Persianblue: hsla(241, 72%, 46%, 0); 
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+*{
+    padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100dvh;/*On mobile devices, viewport height may differ due to browser toolbars and other elements. 
+    Therefore, it is recommended to use 100dvh instead of 100vh to make an element cover the entire screen.*/
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 730px;
+    height: 510px;
+    background-color: var(--White);
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 12px hsla(221, 100%, 96%, 0.6);
+}
+
+.card-left{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( var(--Lightslateblue), var(--Lightroyalblue));
+  border-radius: 30px;
+
+  padding-bottom: 10px;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 0.7),hsla(241, 72%, 46%, 0));
+}
+
+h1{
+    color: var(--Paleblue);
+    font-size: 1.5rem;
+    opacity: 75%;
+    font-weight: 600;
+}
+
+.circle-num{
+    color: var(--White);
+    font-size: 48px;
+    margin-bottom: -10px;
+}
+
+.max-point{
+    margin-top: 10px;
+  color: var(--Paleblue);
+  opacity: 50%;
+}
+.left-bottom{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: normal;
+}
+.bottom-title{
+    color: var(--White);
+    margin-top: 25px;
+    margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bottom-paragraph{
+    text-align: center;
+  color: var(--Paleblue);
+  opacity: 85%;
+  width: 85%;
+}
+
+.card-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.card-right-summary{
+    display: flex;
+  justify-content: flex-start;
+  width: 288px;
+}
+.card-summary{
+    font-size: 1.5rem;
+    opacity: 75%;
+    font-weight: 600;
+}
+.card-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stats-box1,.stats-box2,.stats-box3,.stats-box4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 288px;
+    height: 55px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.stats-box1{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.stats-box2{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.stats-box3{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.stats-box4{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.stat-img{
+    display: flex;
+}
+
+.stats-title{
+    display: flex;
+}
+#status-img{
+    margin-left: 1px;
+}
+
+.stats-title1{
+    color: var(--Lightred);
+    margin-left: 10px;
+}
+
+.stats-title2{
+    color: var(--Orangeyyellow);
+    margin-left: 10px;
+}
+
+.stats-title3{
+    color: var(--Greenteal);
+    margin-left: 10px;
+}
+
+.stats-title4{
+    color: var(--Cobaltblue);
+    margin-left: 10px;
+}
+
+.stats-span{
+    opacity: 40%;
+}
+
+.stats-result1{
+    margin-left: 90px;
+}
+.stats-result2{
+    margin-left: 92px;
+}
+.stats-result3{
+    margin-left: 110px;
+}
+.stats-result4{
+    margin-left: 110px;
+}
+button{
+   width: 288px;
+  padding:16px 0 16px;  
+  border: none;
+  background-color: var(--Darkgrayblue);
+  border-radius: 30px;
+  color: var(--White);
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover{
+    background-color: var(--Violetblue);
+    transition: 0.3s ease-in-out;
+}
